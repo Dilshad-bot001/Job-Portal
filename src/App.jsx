@@ -2,7 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import AppLayout from "./layouts/app-layout";
 import ProtectedRoute from "./components/protected-route";
-// import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "./components/theme-provider";
 
 import LandingPage from "./pages/landing";
 import Onboarding from "./pages/onboarding";
@@ -76,9 +76,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    //  <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <RouterProvider router={router} />
-    // </ThemeProvider>
+    </ThemeProvider>
   )
 }
 
